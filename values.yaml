@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  name: whoami
+  pullPolicy: IfNotPresent
+
+service:
+  port: 80
+
+dnsNames:
+- cert-example.example.com
