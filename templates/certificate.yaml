@@ -25,5 +25,5 @@ spec:
   - {{ . }}
 {{ end }}
   issuerRef:
-    name: letsencrypt-production-http01
-    kind: ClusterIssuer
+    name: {{ .Values.issuer.name }}
+    kind: {{ .Values.issuer.kind }}
